@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="employeedata.css">
+    </link>
+   <!-- Firebase References -->
+   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+
+</head>
+
+<body>
+
+    <table class="table">
+        <thead>
+            <tr>Add Employee</tr>
+            <tr>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Role</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">Months Worked</th>
+                <th scope="col">Montly Rate ($)</th>
+                <th scope="col">Total Billed ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <form>
+        <div class="form-group">
+            <label>Employee Name</label>
+            <input id= "employee-name" type="name" class="form-control">
+
+            <!-- <small id="emailHelp" class="form-text text-muted"></small> -->
+        </div>
+        <div class="form-group">
+            <label>Role</label>
+            <input id= "role" type="Role" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+            <label>Start Date (MM/DD/YYYY)</label>
+            <input id= "start-date" type="date" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+            <label>Monthly Rate</label>
+            <input id= "monthly-rate" type="number" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <!-- <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <button type="submit" id="eSubmit" class="btn btn-primary">Submit</button>
+    </form>
+  <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="employeedata.js"></script>
+    
+</body>
+
+</html>
+<!-- 
+database,ref().Push({ -->
